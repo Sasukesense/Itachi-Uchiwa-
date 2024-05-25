@@ -1,11 +1,7 @@
-#  Cmd install ask.js const axios = require('axios');
+const axios = require('axios');
 
 const Prefixes = [
-  'ask',
-  'gpt',
-  'ai',
-  'bot',
-  'openai',
+  'ephemia'
 ];
 
 module.exports = {
