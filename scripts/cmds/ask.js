@@ -1,46 +1,47 @@
- const axios = require('axios');
+#  Cmd install ask.js const axios = require('axios');
 
 const Prefixes = [
-  'sonic'
+  'ask',
+  'gpt',
+  'ai',
+  'bot',
+  'openai',
 ];
 
 module.exports = {
   config: {
-    name: "ask",
+    name: "chatgpt",
     version: 1.0,
-    author: "Shïsûį",
-    longDescription: "AI", 
+    author: "ArYAN",
+    role: 0,
+    shortDescription: "Ask question to ChatGPT",
+    longDescription: "Interact as ChatGPT provided by OpenAi. This command allows users to interact with the AI, asking various questions and receiving detailed answers.",
     category: "ai",
     guide: {
-      en: "{p} questions",
+      en: "{p}ai [ question ] - Replace '{p}' with your command prefix and 'question' with your actual query.",
     },
   },
+  
   onStart: async function () {},
   onChat: async function ({ api, event, args, message }) {
     try {
-      
       const prefix = Prefixes.find((p) => event.body && event.body.toLowerCase().startsWith(p));
       if (!prefix) {
         return; // Invalid prefix, ignore the command
       }
       const prompt = event.body.substring(prefix.length).trim();
-   if (!prompt) {
-        await message.reply("𝐏𝐨𝐬𝐞 𝐦𝐨𝐢 𝐭𝐚 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧 ✅✨🌿 𝐣𝐞 𝐥𝐚 𝐫𝐞𝐬𝐨𝐥𝐯𝐞 𝐚 𝐥𝐚 𝐯𝐢𝐭𝐞𝐬𝐬𝐞 𝐝𝐞 𝐥'𝐞𝐜𝐥𝐚𝐢𝐫🏂✨🍀");
+      if (!prompt) {
+        await message.reply("𝑬𝑷𝑯𝑬𝑴𝑰𝑨❤\n✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏\n𝑆𝑎𝑙𝑢𝑡 𝑚𝑜𝑛 𝑐ℎ𝑜𝑢💖 𝐴𝑝𝑝𝑟𝑜𝑐ℎ𝑒 𝑒𝑡 𝑝𝑜𝑠𝑒 𝑚𝑜𝑖 𝑡𝑎 𝑞𝑢𝑒𝑠𝑡𝑖𝑜𝑛😏");
         return;
       }
-
-
-      const response = await axios.get(`https://sandipbaruwal.onrender.com/gpt?prompt=${encodeURIComponent(prompt)}`);
-      const answer = response.data.answer;
-
- 
-    await message.reply({ body: `𝐒𝐎𝐍𝐈𝐂 🍀
-✧════•❁❀❁•════✧        ${answer}
-✧════•❁❀❁•════✧ 𝐒𝐔𝐏𝐄𝐑 𝐒𝐎𝐍𝐈𝐂🏂`,
-});
-
-   } catch (error) {
-      console.error("Error:", error.message);
+      api.setMessageReaction("⏰", event.messageID, (err) => {}, true);
+      const response = await axios.get(`https://himachalwale.onrender.com/api/chatgpt?prompt=${encodeURIComponent(prompt)}&apikey=©himachalwale`);
+      const answer = response.data.fullResponse;
+      await message.reply(answer);
+      api.setMessageReaction("✅", event.messageID, (err) => {}, true);
+    } catch (error) {
+      console.error("Error:", error.message, error.response?.data);
+      api.setMessageReaction("❌", event.messageID, (err) => {}, true);
     }
   }
-  }
+};
