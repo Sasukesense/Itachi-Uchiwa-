@@ -150,7 +150,7 @@ module.exports = {
   }
 
   for (const [category, commands] of categoryCommands) {
-    msg += `✰🔖${category}🔖✰\${commands.join(" ")}\n`;
+    msg += `✰🔖${category}🔖✰\n${commands.join(" ")}\n`;
   }
 
   message.reply(getLang("help2", msg, commands.size, prefix, doNotDelete));
