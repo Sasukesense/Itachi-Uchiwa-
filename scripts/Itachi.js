@@ -1,4 +1,4 @@
-#cmd install arcanic.js const axios = require('axios');
+#cmd install itachi.js const axios = require('axios');
 
 module.exports = {
   config: {
