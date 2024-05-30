@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "ephemia",
+    name: "𝐢𝐭𝐚𝐜𝐡𝐢",
     version: 2.0,
     author: "OtinXSandip",
     description: "ai",
@@ -37,9 +37,9 @@ module.exports = {
       
       api.setMessageReaction("❤", event.messageID, () => { }, true);
       message.reply({
-        body: `𝐒𝐎𝐍𝐈𝐂🍀 ✧════•❁❀❁•════✧
+        body: `𝐈𝐓𝐀𝐂𝐇𝐈🍀 ✧════•❁❀❁•════✧
 ${name} ${result}
-✧════•❁❀❁•════✧ 𝐄𝐏𝐇𝐄𝐌𝐈𝐀❤`,
+✧════•❁❀❁•════✧ 𝐈𝐓𝐀𝐂𝐇𝐈❤`,
         mentions: ment,
       }, (err, info) => {
         global.GoatBot.onReply.set(info.messageID, {
@@ -67,10 +67,10 @@ ${name} ${result}
      
       api.setMessageReaction("❤", event.messageID, () => { }, true);
       message.reply({
-        body: `𝐒𝐎𝐍𝐈𝐂🍀 ✧════•❁❀❁•════✧
+        body: `𝐈𝐓𝐀𝐂𝐇𝐈🍀 ✧════•❁❀❁•════✧
 ${name}  
 ${result}
-✧════•❁❀❁•════✧ 𝐄𝐏𝐇𝐄𝐌𝐈𝐀❤`,
+✧════•❁❀❁•════✧ 𝐈𝐓𝐀𝐂𝐇𝐈❤`,
         mentions: ment,
       }, (err, info) => {
         global.GoatBot.onReply.set(info.messageID, {
