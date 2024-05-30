@@ -1,7 +1,7 @@
 module.exports = {
 	config: {
-		name: "shisui",
-		aliases: ["shi"],
+		name: "cid kageno",
+		aliases: ["cid","kageno"],
 		version: "1.0",
 		author: "ʬɸʬ Shïsûį Dånïęl ʬɸʬ", // do not change this credits
 		countDown: 5,
@@ -14,14 +14,13 @@ module.exports = {
 
 	onStart: async function ({ message }) {
 	 var link = [ 
-"https://i.ibb.co/Qns597W/image.jpg",
-"https://i.ibb.co/CnCRd9Y/image.jpg",
-"https://i.ibb.co/QP2HzQs/image.jpg",
-"https://i.ibb.co/PhTXc7x/image.jpg",
+"https://i.ibb.co/mRfT6ZH/image.jpg",
+"https://i.ibb.co/BZx5S7N/image.jpg",
+"https://i.ibb.co/PhTXc7x/image.jp",
   ]
 let img = link[Math.floor(Math.random()*link.length)]
 message.send({
-  body: '🎀✨𝐔𝐂𝐇𝐈𝐖𝐀 𝐒𝐇𝐈𝐒𝐔𝐈✨🎀',attachment: await global.utils.getStreamFromURL(img)
+  body: '🎀✨𝐔𝐂𝐇𝐈𝐖𝐀 𝐈𝐓𝐀𝐂𝐇𝐈✨🎀',attachment: await global.utils.getStreamFromURL(img)
 })
 }
   }
