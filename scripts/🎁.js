@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "🎁",
         version: "1.0",
-        author: "ʬɸʬ Shïsûį Dånïęl ʬɸʬ",
+        author: "cid kageno",
         countDown: 5,
         role: 0,
         shortDescription: "sarcasm",
@@ -15,6 +15,6 @@ module.exports = {
         message,
         getLang
     }) {
-        if (event.body && event.body.toLowerCase() == "🎁") return message.reply("𝑂ℎℎℎ 😊 𝑐'𝑒𝑠𝑡 𝑝𝑜𝑢𝑟 𝑚𝑜𝑖 !? 𝐶'𝑒𝑠𝑡 𝑔𝑒𝑛𝑡𝑖𝑙 𝑑𝑒 𝑡𝑎 𝑝𝑎𝑟𝑡😇");
+        if (event.body && event.body.toLowerCase() == "🎁") return message.reply("🖕🖕🖕🖕🖕🖕 tu t'attendais à quoi enfoiré 🖕");
     }
 }
