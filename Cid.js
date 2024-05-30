@@ -1,7 +1,7 @@
 module.exports = {
   config: {
-    name: "cid ",
-    aliases: ["cid "],
+    name: "itachi ",
+    aliases: ["itachi "],
     version: "1.0",
     author: "cid kageno ",
     countDown: 10,
@@ -9,7 +9,7 @@ module.exports = {
     shortDescription: "Amuses toi bien au jeu du hasard",
     longDescription: "Seul le hasard tu rendras riche ou pauvre...Bonne chance",
     category: "game",
-    guide: "{pn} <Sonic/kageno> <amount of money>"
+    guide: "{pn} <all/sama> <amount of money>"
   },
 
   onStart: async function ({ args, message, usersData, event }) {
@@ -18,8 +18,8 @@ module.exports = {
     const user = event.senderID;
     const userData = await usersData.get(event.senderID);
 
-    if (!["all", "kageno"].includes(betType)) {
-      return message.reply("🎁 | 𝘾𝙝𝙤𝙞𝙨𝙞𝙨 : 'all' 𝙤𝙪 'kageno'.");
+    if (!["all", "sama"].includes(betType)) {
+      return message.reply("🎁 | 𝘾𝙝𝙤𝙞𝙨𝙞𝙨 : 'all' 𝙤𝙪 'sama'.");
     }
 
     if (!Number.isInteger(betAmount) || betAmount < 50) {
