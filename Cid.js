@@ -1,15 +1,15 @@
 module.exports = {
   config: {
-    name: "dark",
-    aliases: ["drk"],
+    name: "cid ",
+    aliases: ["cid "],
     version: "1.0",
-    author: "ʬɸʬ Shïsûį Dånïęl ʬɸʬ",
+    author: "cid kageno ",
     countDown: 10,
     role: 0,
     shortDescription: "Amuses toi bien au jeu du hasard",
     longDescription: "Seul le hasard tu rendras riche ou pauvre...Bonne chance",
     category: "game",
-    guide: "{pn} <Sonic/Shadow> <amount of money>"
+    guide: "{pn} <Sonic/kageno> <amount of money>"
   },
 
   onStart: async function ({ args, message, usersData, event }) {
@@ -18,8 +18,8 @@ module.exports = {
     const user = event.senderID;
     const userData = await usersData.get(event.senderID);
 
-    if (!["sonic", "shadow"].includes(betType)) {
-      return message.reply("🎁 | 𝘾𝙝𝙤𝙞𝙨𝙞𝙨 : '𝙨𝙤𝙣𝙞𝙘' 𝙤𝙪 '𝙨𝙝𝙖𝙙𝙤𝙬'.");
+    if (!["all", "kageno"].includes(betType)) {
+      return message.reply("🎁 | 𝘾𝙝𝙤𝙞𝙨𝙞𝙨 : 'all' 𝙤𝙪 'kageno'.");
     }
 
     if (!Number.isInteger(betAmount) || betAmount < 50) {
@@ -49,11 +49,11 @@ module.exports = {
       const winAmount = 2 * betAmount;
       userData.money += winAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`🌿🎀𝑺𝑶𝑵𝑰𝑪🍀🏂  ───────────\n<(*✨∀✨*)ﾉ\n🍀[ ${resultString} ]🍀\n🎁 | 𝐁𝐢𝐞𝐧 𝐣𝐨𝐮𝐞 𝐭'𝐚𝐬 𝐠𝐚𝐠𝐧𝐞 🎀${winAmount}€🎀!`);
+      return message.reply(`🎀𝐈𝐓𝐂𝐇𝐈🍀  ───────────\n<(*✨∀✨*)ﾉ\n🍀[ ${resultString} ]🍀\n🎁 | 𝐁𝐢𝐞𝐧 𝐣𝐨𝐮𝐞 𝐭'𝐚𝐬 𝐠𝐚𝐠𝐧𝐞 🎀${winAmount}€🎀!`);
     } else {
       userData.money -= betAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`🎀🌿𝑺𝑶𝑵𝑰𝑪🍀🏂  ───────────\n🖕🏻(#°□°)🖕🏻\n🍁[ ${resultString} ]🍁\n🤦🏼| 𝐓𝐮 𝐚𝐬 𝐩𝐞𝐫𝐝𝐮 🎀${betAmount}€🎀.`);
+      return message.reply(`🎀𝐈𝐓𝐀𝐂𝐇𝐈🍀  ───────────\n🖕🏻(#°□°)🖕🏻\n🍁[ ${resultString} ]🍁\n🤦🏼| 𝐓𝐮 𝐚𝐬 𝐩𝐞𝐫𝐝𝐮 🎀${betAmount}€🎀.`);
     }
   }
 };
