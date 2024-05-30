@@ -2,7 +2,7 @@
 
 module.exports = {
   config: {
-    name: "arcanic",
+    name: "itachi",
     version: 2.0,
     author: "OtinXSandip",
     description: "ai",
@@ -37,9 +37,9 @@ module.exports = {
       
       api.setMessageReaction("🔴", event.messageID, () => { }, true);
       message.reply({
-        body: `𝐒𝐎𝐍𝐈𝐂🍀 ✧════•❁❀❁•════✧
+        body: `𝑰𝑻𝑨𝑪𝑯𝑰 ✧════•❁❀❁•════✧
 ${name} ${result}
-✧════•❁❀❁•════✧ 𝐀𝐑𝐂𝐀𝐍𝐎🔴`,
+✧════•❁❀❁•════✧ 𝑰𝑻𝑨𝑪𝑯𝑰🔴`,
         mentions: ment,
       }, (err, info) => {
         global.GoatBot.onReply.set(info.messageID, {
@@ -67,10 +67,10 @@ ${name} ${result}
      
       api.setMessageReaction("🔴", event.messageID, () => { }, true);
       message.reply({
-        body: `𝐒𝐎𝐍𝐈𝐂🍀 ✧════•❁❀❁•════✧
+        body: `𝑰𝑻𝑨𝑪𝑯𝑰🍀 ✧════•❁❀❁•════✧
 ${name}  
 ${result}
-✧════•❁❀❁•════✧ 𝐀𝐑𝐂𝐀𝐍𝐎🔴`,
+✧════•❁❀❁•════✧ 𝑰𝑻𝑨𝑪𝑯𝑰🔴`,
         mentions: ment,
       }, (err, info) => {
         global.GoatBot.onReply.set(info.messageID, {
