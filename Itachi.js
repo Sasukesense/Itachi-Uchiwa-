@@ -1,7 +1,7 @@
 const axios = require("axios")
 module.exports = {
 	config: {
-		name: 'ephenia',
+		name: 'itachi',
         aliases: ["loft"],
 		version: '1.2',
 		author: 'Luxion/fixed by Riley',
