@@ -27,12 +27,12 @@ module.exports = {
         await api.sendMessage(loadingMessage, event.threadID);
 
         const ownerInfo = {
-          name: '🌿✨𝐒𝐎𝐍𝐈𝐂🍀🎀',
+          name: '🌿✨ itachi uchiwa 🍀🎀',
           gender: '𝗕𝗢𝗬',
           hobby: '𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥🏈',
-          relationship: '𝐄𝐧 𝐜𝐨𝐮𝐩𝐥𝐞❤✨🎀 𝐚𝐯𝐞𝐜 𝐌𝐀𝐑𝐈𝐀𝐌 𝐊𝐎𝐍𝐄🌿❤🍀',
-          facebookLink: 'ʚɸɞhttps://www.facebook.com/profile.php?id=100090405019929.ʚɸɞ',
-          bio: '🍀✨𝐃𝐚𝐧𝐢𝐞𝐥❦𝐔𝐜𝐡𝐢𝐰𝐚✨🍀 👮𝐏𝐨𝐥𝐢𝐜𝐞 𝐔𝐜𝐡𝐢𝐰𝐚🍀𝐒𝐨𝐜𝐢𝐚𝐥𝐞🍀𝐃𝐞 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤👮'
+          relationship: '𝐄𝐧 𝐜𝐨𝐮𝐩𝐥𝐞❤✨🎀 ',
+          facebookLink: 'https://www.facebook.com/profile.php?id=100075173081158',
+          bio: '🍀cid kageno ✨🍀'
         };
 
         const videoUrl = 
