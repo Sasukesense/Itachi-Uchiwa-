@@ -54,7 +54,7 @@ module.exports = {
       // Assuming global.utils.getStreamFromURL(img) is correctly defined
       const imgURL= "https://i.ibb.co/4f70Xs9/image.jpg";
       const attachment = await global.utils.getStreamFromURL(imgURL); api.sendMessage({
-        body: `🍀𝑆𝑈𝑃𝐸𝑅♻️𝑆𝑂𝑁𝐼𝐶🍀 \────────\
+        body: `🍀itachi uchiwa 🍀 \────────\
 
 🍀 | 𝐒𝐎𝐍𝐈𝐂 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\  ${uptimeString}\──────── \
 
