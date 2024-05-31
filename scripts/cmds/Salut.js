@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝑆𝑎𝑙𝑢𝑡 ✋✨🍀...𝑐𝑎 𝑡𝑒 𝑑𝑖𝑡 𝑢𝑛𝑒 𝑝'𝑡𝑖𝑡𝑒 𝑐𝑜𝑢𝑟𝑠𝑒...𝑐𝑜𝑛𝑡𝑟𝑒 𝑚𝑜𝑖 !?😏✨🌿✅");
+    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝑆𝑎𝑙𝑢𝑡 ✋ comment tu vas ? fait +Akatsukigc pour rejoindre mon organisation ?✨🌿✅");
 }
 };
